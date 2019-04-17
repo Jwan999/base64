@@ -92,10 +92,10 @@
         },
         methods: {
             encode() {
-                this.output = btoa(this.input)
+                this.output = btoa(this.toUtf8(this.input))
             },
             decode() {
-                this.output = atob(this.input)
+                this.output = atob(this.fromUtf8(this.input))
             },
             showEncode() {
                 this.displayEncode = true;
@@ -107,6 +107,13 @@
                 this.displayDecode = true;
                 this.input = ''
             },
+            toUtf8(s) {
+                return unescape(encodeURIComponent(s));
+            },
+
+            fromUtf8(s) {
+                return decodeURIComponent(escape(s));
+            }
         },
         mounted() {
         },
