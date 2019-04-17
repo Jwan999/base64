@@ -40,7 +40,7 @@
             <div class="form-group">
         <textarea name="text" type="text" v-on:keyup="encode" v-model="input" class="form-control text"
                   placeholder="Type here a text to encode"
-                  rows="2" autocomplete='off' spellcheck='false' autocorrect='off'></textarea>
+                  rows="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
                 <small class="text-muted float-right mt-2">char count {{input.length}}</small>
             </div>
         </div>
@@ -49,7 +49,7 @@
             <div class="form-group ">
         <textarea name="text" type="text" v-on:keyup="decode" v-model="input" class="form-control text"
                   placeholder="put smth here to decode from base64"
-                  rows="2" autocomplete='off' spellcheck='false' autocorrect='off'></textarea>
+                  rows="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
                 <small class="text-muted float-right mt-2">char count {{input.length}}</small>
 
             </div>
