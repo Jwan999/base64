@@ -24,8 +24,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8 m-3">
             <h4 class="text-center mt-5">
-               <p>You want to  <a @click="showEncode()" class="text-info p-0">encode, </a> or
-                   <a @click="showDecode()" class="text-info p-0">decode?</a></p>
+                <p claas="mt-5">You want to
+                    <a @click="showEncode()" class="text-info p-0">encode, </a>
+                    or
+                    <a @click="showDecode()" class="text-info p-0">decode?</a>
+                </p>
 
             </h4>
         </div>
@@ -37,7 +40,7 @@
             <div class="form-group">
         <textarea v-on:keyup="encode" v-model="input" class="form-control"
                   placeholder="Type here a text to encode"
-                  rows="3"></textarea>
+                  rows="2"></textarea>
                 <small class="text-muted float-right mt-2">char count {{input.length}}</small>
             </div>
         </div>
@@ -46,7 +49,7 @@
             <div class="form-group ">
         <textarea v-on:keyup="decode" v-model="input" class="form-control"
                   placeholder="put smth here to decode from base64"
-                  rows="3"></textarea>
+                  rows="2"></textarea>
                 <small class="text-muted float-right mt-2">char count {{input.length}}</small>
 
             </div>
